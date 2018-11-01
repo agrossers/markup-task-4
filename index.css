@@ -1,0 +1,102 @@
+p
+{
+    margin: 3px;
+}
+
+h2
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2:hover
+{
+    color: red;
+    transform: scale(.98);
+    transition: .5s all;
+}
+
+p:hover
+{
+    color: orange;
+    transform: scale(1.01);
+    transition: .5s all;
+}
+
+.goriz,
+.full
+{
+    display: none;
+}
+
+.vert,
+.goriz
+{
+    font-size: 200%;
+    margin-left: 20px;
+}
+
+#btnControl
+{
+    display: none;
+}
+
+#btnControl:checked + label > .goriz
+{
+    display: block;
+}
+
+#btnControl:checked + label > .vert
+{
+    display: none;
+}
+
+#btnControl:checked + label ~ div.card > div.sample
+{
+    display: none;
+}
+
+#btnControl:checked + label ~ div.card > div.full
+{
+    display: block;
+}
+
+#btnControl:checked + label ~ div.card
+{
+    max-width: 600px;
+}
+
+.card
+{
+    display: inline-block;
+    max-width: 300px;
+    margin: 20px;
+    border: double 3px black;
+    border-radius: 5%;
+}
+
+img
+{
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    margin-top: 10px;
+}
+
+img:hover
+{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.card:hover
+{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  transition: .5s all;
+  z-index: 1000;
+  background: #98B6F0
+}
