@@ -37,32 +37,32 @@ p:hover
     margin-left: 20px;
 }
 
-#btnControl
+input
 {
     display: none;
 }
 
-#btnControl:checked + label > .goriz
+input:checked + label > .goriz
 {
     display: block;
 }
 
-#btnControl:checked + label > .vert
+input:checked + label > .vert
 {
     display: none;
 }
 
-#btnControl:checked + label ~ div.card > div.sample
+input:checked + label ~ div.card > div.sample
 {
     display: none;
 }
 
-#btnControl:checked + label ~ div.card > div.full
+input:checked + label ~ div.card > div.full
 {
     display: block;
 }
 
-#btnControl:checked + label ~ div.card
+input:checked + label ~ div.card
 {
     max-width: 600px;
 }
@@ -88,15 +88,16 @@ img
 
 img:hover
 {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .card:hover
 {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-  transition: .5s all;
-  z-index: 1000;
-  background: #98B6F0
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transition: .5s all;
+    z-index: 1000;
+    background: #98b6f0
 }
+
