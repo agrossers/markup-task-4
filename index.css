@@ -98,6 +98,5 @@ img:hover
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     transition: .5s all;
     z-index: 1000;
-    background: #98b6f0
+    background: #98b6f0;
 }
-
